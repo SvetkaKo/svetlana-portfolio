@@ -1,0 +1,49 @@
+.logo-box {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.logo {
+    height: 3rem;
+}
+
+.navigation {
+    background-color: $color-primary;    
+    padding: 0 3rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+
+    &__nav {
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        grid-column: 2 / -1;
+    }
+     
+    &__item {
+        margin: 1rem;
+        display: inline-block;
+        text-decoration: none;
+    }
+
+    &__link {
+    &:link,
+    &:visited {
+        color: inherit;
+        text-decoration: none;
+        // text-transform: uppercase;
+        transition: all 0.3s;
+
+        span {
+            color: #fff;
+            margin-right: 0.5rem;
+            display: inline-block;            
+          }
+        }
+        &:hover {
+            color: #fff;
+        } 
+    }
+}

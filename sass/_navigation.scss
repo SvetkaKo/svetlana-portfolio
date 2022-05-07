@@ -1,49 +1,53 @@
 .logo-box {
-    display: flex;
-    justify-content: start;
-    align-items: center;
+  display: flex;
+  justify-content: start;
+  align-items: center;
 }
 
 .logo {
-    height: 3rem;
+  height: 3rem;
 }
 
 .navigation {
-    background-color: $color-primary;    
-    padding: 0 3rem;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+  background-color: $color-primary;
+  padding: 0 3rem;
+  display: grid;
+  grid-template-columns: min-content 1fr min-content;
+  justify-content: center;
+  align-items: center;
 
+  &__btn {
+    grid-column: 3 / -1;
+    margin-left: 15px;
+  }
 
-    &__nav {
-        display: flex;
-        align-items: center;
-        justify-content: end;
-        grid-column: 2 / -1;
-    }
-     
-    &__item {
-        margin: 1rem;
-        display: inline-block;
-        text-decoration: none;
-    }
+  &__nav {
+    display: flex;
+    justify-content: end;
+    grid-column: 2 / -2;
+  }
 
-    &__link {
+  &__item {
+    margin: 1rem;
+    display: inline-block;
+    text-decoration: none;
+  }
+
+  &__link {
     &:link,
     &:visited {
-        color: inherit;
-        text-decoration: none;
-        // text-transform: uppercase;
-        transition: all 0.3s;
+      color: inherit;
+      text-decoration: none;
+      transition: all 0.3s;
 
-        span {
-            color: #fff;
-            margin-right: 0.5rem;
-            display: inline-block;            
-          }
-        }
-        &:hover {
-            color: #fff;
-        } 
+      span {
+        color: $color-text-dark;
+        margin-right: 0.5rem;
+        display: inline-block;
+      }
     }
+    &:hover {
+      color: $color-text-dark;
+    }
+  }
 }

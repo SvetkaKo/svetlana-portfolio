@@ -1,12 +1,18 @@
-$color-primary: #55c57a;
-$color-secondary: #ffb900;
-$color-tertiary: #2998ff;
+$color-primary: #1c1427;
+$color-secondary: #dedce0;
+$color-secondary-light: #fdfcff;
+
+$color-tertiary: #40394a;
+
+$color-text-dark: #7eca9c;
+$color-text-light: #ccffbd;
+$color-text-main: #000000;
+$color-text-grey: #bebdc1;
 
 // FONT VARIABLES
-$font-primary: "Open Sans", sans-serif;
+$font-primary: 'Open Sans', sans-serif;
 
-
-// RESPONSIVE 
+// RESPONSIVE
 $bp-largest: 75em; // 1200px
 $bp-large: 62.5em; // 1000px
 $bp-medium: 50em; // 800px
@@ -29,13 +35,19 @@ body {
   font-family: $font-primary;
   font-weight: 300;
   line-height: 1.6;
-  // padding: 3rem ;
-  // color: #777;
+  font-size: 1.4rem;
+  color: $color-text-light;
+}
+
+h1 {
+  font-size: 6rem;
+}
+
+h2 {
+  font-size: 2.5rem;
 }
 
 .container {
   display: grid;
-  grid-template-rows: 4rem 80vh repeat(4, min-content) 8rem;
-
-  
+  grid-template-rows: 95vh repeat(4, min-content);
 }

@@ -1,67 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&subset=cyrillic" rel="stylesheet">
-        
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="shortcut icon" type="image/png" href="img/favicon.png">
-        
-        <title>Svetlana Ko</title>
-    </head>
-    <body class="container">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&subset=cyrillic" rel="stylesheet" />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+
+    <title>Svetlana Ko</title>
+  </head>
+
+  <body>
     <div class="navigation">
-        <div class="logo-box">
-            <img src="img/logo.png" alt="logo" class="logo" />  
-        </div>
-  
-        <nav class="navigation__nav">        
-          <ul class="navigation__list">
-            <li class="navigation__item"><a href="#section-about" class="navigation__link"><span>01.</span>About</a></li>
-            <li class="navigation__item"><a href="#section-experience" class="navigation__link"><span>02.</span>Experience</a></li>
-            <li class="navigation__item"><a href="#section-work" class="navigation__link"><span>03.</span>Work</a></li>
-            <li class="navigation__item"><a href="#section-contact" class="navigation__link"><span>04.</span>Contact</a></li>
-          </ul>
-        </nav>     
-    </div> 
+      <div class="logo-box">
+        <img src="img/logo.png" alt="logo" class="logo" />
+      </div>
+      <nav class="navigation__nav">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a href="#section-about" class="navigation__link"><span>01.</span>About</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#section-experience" class="navigation__link"><span>02.</span>Experience</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#section-work" class="navigation__link"><span>03.</span>Work</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#section-contact" class="navigation__link"><span>04.</span>Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <a class="btn navigation__btn" href="" target="_blank">Resume</a>
+    </div>
 
-    <header class="header">
+    <div class="container">
+      <header class="header">
         <div class="header__text-box">
-            <h4 class="heading-secondary">Hi, my name is</h3>
-            <h1 class="heading-primary">Svetlana</h1>
-            <h1 class="heading-primary">I create web experience</h1>
-            <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <button class="btn-main">Get in Touch</button>
+          <h3 class="header__h3">Hi, my name is</h3>
+          <h1 class="header__h1-primary">Svetlana Ko</h1>
+          <h1 class="header__h1-secondary">I create web experience</h1>
+          <p class="paragraph">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+            minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </p>
+          <button class="btn header__btn">Get in Touch</button>
         </div>
-    </header>
+      </header>
 
-            <section class="about">
-           <div class="about__pictures">
-               About pictures
-           </div>
-           <div class="about__content">
-            About content
+      <section class="about">
+        <div class="heading">
+          <h2 class="heading__h2"><span class="heading__h2-span">01.</span> About Me</h2>
         </div>
-        </section>
 
-        <section class="experience">
-            Experience
-        </section>
+        <div class="about__content">
+          <div class="about__content-text">
+            <p>
+              Auctor neque vitae tempus quam pellentesque nec nam aliquam sem. Blandit turpis cursus in hac habitasse. Purus viverra accumsan in nisl.
+              Cras sed felis eget velit aliquet sagittis. Elit eget gravida cum sociis natoque penatibus et magnis dis.
+            </p>
+            <p>
+              Malesuada bibendum arcu vitae elementum curabitur vitae nunc sed velit. Eget egestas purus viverra accumsan in nisl nisi scelerisque eu.
+              Sed velit dignissim sodales ut. Turpis massa sed elementum tempus egestas sed. Convallis tellus id interdum velit laoreet id donec
+              ultrices tincidunt.
+            </p>
+            <div class="skils">
+              <h4 class="about__h4">Here are a few technologies I’ve been working with recently:</h4>
+            </div>
+            <ul class="about__skils">
+              <li class="about__skils-item">JavaScript (ES6+)</li>
+              <li class="about__skils-item">HTML/CSS/SCSS</li>
+              <li class="about__skils-item">Node.js</li>
+              <li class="about__skils-item">Vue.js</li>
+            </ul>
+          </div>
 
-        <section class="work">
-            work
-        </section>
+          <img class="about__picture-1" src="./img/about.jpg" alt="About me" />
+        </div>
+      </section>
 
-        <section class="contact">
-            contact
-        </section>
+      <section class="experience">
+        <div class="heading">
+          <h2 class="heading__h2"><span class="heading__h2-span">02.</span>Experience</h2>
+        </div>
+        <div class="experience__content">certificates</div>
+      </section>
 
-    
-    <footer class="footer">
-       &copy; Designed & Built by Svetlana Ko 
-    </footer>
-    </body>
+      <section class="work">
+        <div class="heading">
+          <h2 class="heading__h2"><span class="heading__h2-span">03.</span>Work</h2>
+        </div>
+        <div class="work__content">
+          <!-- project 1 -->
+        </div>
+      </section>
+
+      <section class="contact">contact</section>
+    </div>
+
+    <footer class="footer">&copy; Designed & Built by Svetlana Ko</footer>
+  </body>
 </html>
+
+
+<div class="project">
+            <img src="img/house-1.jpeg" alt="img" class="project__img" />
+
+            <h3 class="project__name">Project name</h5>
+            <div class="project__discription">
+              <p>
+                Malesuada bibendum arcu vitae elementum curabitur vitae nunc sed velit. Eget egestas purus viverra accumsan in nisl nisi scelerisque
+                eu.
+              </p>
+            </div>
+            <ul class="project__tech">
+              <li class="project__tech-item">JavaScript (ES6+)</li>
+              <li class="project__tech-item">HTML/CSS/SCSS</li>
+              <li class="project__tech-item">Node.js</li>
+              <li class="project__tech-item">Vue.js</li>
+            </ul>
+            <div class="project__footer">
+             <button class="btn project__btn">Learn more</button>               
+            </div>
+          </div>

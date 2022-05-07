@@ -1,3 +1,47 @@
 .work {
-    background-color: $color-tertiary;
+  background-color: $color-tertiary;
+  padding: 3rem 20rem;
+
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-gap: 7rem;
+  }
+}
+
+.project {
+  background-color: $color-secondary-light;
+  color: $color-text-main;
+  border-radius: 1rem;
+  overflow: hidden;
+  display: grid;
+
+  &__img {
+    width: 100%;
+  }
+
+  &__name {
+    justify-self: center;
+    width: 100%;
+    text-align: center;
+    padding: 0.5rem;
+    background-color: $color-primary;
+    color: white;
+    font-weight: 400;
+  }
+
+  &__discription {
+    padding: 1rem;
+  }
+
+  &__btn {
+    margin: 1rem;
+    width: 15rem;
+  }
+
+  &__footer {
+    display: grid;
+    justify-content: center;
+    background-color: $color-primary;
+  }
 }

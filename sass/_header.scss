@@ -1,12 +1,38 @@
 .header {
-    background-color: $color-secondary;
-    color: red;
-    padding: 8rem;
+  color: $color-text-light;
+  padding: 8rem;
 
-    display: grid;
-    grid-template-rows: repeat(5, 1fr);
-    grid-template-columns: repeat(2, 1fr);
+  display: grid;
+  justify-content: center;
 
-    grid-row-gap: 1.5rem;
-    justify-content: center;
+  color: $color-text-dark;
+
+  background-image: linear-gradient(rgba($color-primary, 0.9), rgba($color-primary, 0.9)), url(../img/header.jpg);
+  position: relative;
+  background-size: cover;
+  background-position: top;
+
+  .header__text-box {
+    z-index: 20;
+    grid-column: 1 / 2;
+    width: 60%;
+    margin-left: 5rem;
+    // display: grid;
+  }
+
+  &__h1-primary {
+    color: $color-text-light;
+    line-height: 1.2;
+  }
+
+  &__h1-secondary {
+    color: $color-text-dark;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+  }
+
+  &__btn {
+    margin-top: 2rem;
+    font-size: 2rem;
+  }
 }

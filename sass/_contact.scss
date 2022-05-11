@@ -1,3 +1,41 @@
 .contact {
-    background-color: $color-secondary;
+  background-color: $color-primary;
+
+  &__content {
+    display: grid;
+    justify-items: center;
+  }
+
+  &__paragraph {
+    width: 40rem;
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+}
+
+.contacts {
+  &__btn {
+    font-size: 2.5rem;
+    height: 4rem;
+  }
+
+  &__social {
+    margin-top: 3rem;
+
+    &-item {
+      display: inline-block;
+    }
+
+    &-icon {
+      height: 2rem;
+      width: 2rem;
+      fill: $color-text-light;
+      margin: 0.8rem;
+      transition: all 0.3s;
+
+      &:hover {
+        fill: $color-text-dark;
+      }
+    }
+  }
 }

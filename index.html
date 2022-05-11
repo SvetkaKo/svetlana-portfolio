@@ -9,6 +9,7 @@
 
     <link rel="stylesheet" href="css/style.css" />
     <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+    <script defer src="script.js"></script>
 
     <title>Svetlana Ko</title>
   </head>
@@ -21,7 +22,7 @@
       <nav class="navigation__nav">
         <ul class="navigation__list">
           <li class="navigation__item">
-            <a href="#section-about" class="navigation__link"><span>01.</span>About</a>
+            <a href="#section-about" style="transition-delay: 100ms" class="navigation__link link__scroll-about"><span>01.</span>About</a>
           </li>
           <li class="navigation__item">
             <a href="#section-experience" class="navigation__link"><span>02.</span>Experience</a>
@@ -51,7 +52,7 @@
         </div>
       </header>
 
-      <section class="about">
+      <section class="about" id="section-about">
         <div class="heading">
           <h2 class="heading__h2"><span class="heading__h2-span">01.</span> About Me</h2>
         </div>
@@ -82,34 +83,23 @@
         </div>
       </section>
 
-      <section class="experience">
+      <section class="experience" id="section-experience">
         <div class="heading">
           <h2 class="heading__h2"><span class="heading__h2-span">02.</span>Experience</h2>
         </div>
         <div class="experience__content">certificates</div>
       </section>
 
-      <section class="work">
+      <section class="work" id="section-work">
         <div class="heading">
           <h2 class="heading__h2"><span class="heading__h2-span">03.</span>Work</h2>
         </div>
         <div class="work__content">
           <!-- project 1 -->
-        </div>
-      </section>
-
-      <section class="contact">contact</section>
-    </div>
-
-    <footer class="footer">&copy; Designed & Built by Svetlana Ko</footer>
-  </body>
-</html>
-
-
-<div class="project">
+          <div class="project">
             <img src="img/house-1.jpeg" alt="img" class="project__img" />
 
-            <h3 class="project__name">Project name</h5>
+            <h3 class="project__name">Project name</h3>
             <div class="project__discription">
               <p>
                 Malesuada bibendum arcu vitae elementum curabitur vitae nunc sed velit. Eget egestas purus viverra accumsan in nisl nisi scelerisque
@@ -123,6 +113,101 @@
               <li class="project__tech-item">Vue.js</li>
             </ul>
             <div class="project__footer">
-             <button class="btn project__btn">Learn more</button>               
+              <button class="btn project__btn">Learn more</button>
             </div>
           </div>
+          <!-- project 1 -->
+          <div class="project">
+            <img src="img/house-1.jpeg" alt="img" class="project__img" />
+
+            <h3 class="project__name">Project name</h3>
+            <div class="project__discription">
+              <p>
+                Malesuada bibendum arcu vitae elementum curabitur vitae nunc sed velit. Eget egestas purus viverra accumsan in nisl nisi scelerisque
+                eu.
+              </p>
+            </div>
+            <ul class="project__tech">
+              <li class="project__tech-item">JavaScript (ES6+)</li>
+              <li class="project__tech-item">HTML/CSS/SCSS</li>
+              <li class="project__tech-item">Node.js</li>
+              <li class="project__tech-item">Vue.js</li>
+            </ul>
+            <div class="project__footer">
+              <button class="btn project__btn">Learn more</button>
+            </div>
+          </div>
+          <!-- project 1 -->
+          <div class="project">
+            <img src="img/house-1.jpeg" alt="img" class="project__img" />
+
+            <h3 class="project__name">Project name</h3>
+            <div class="project__discription">
+              <p>
+                Malesuada bibendum arcu vitae elementum curabitur vitae nunc sed velit. Eget egestas purus viverra accumsan in nisl nisi scelerisque
+                eu.
+              </p>
+            </div>
+            <ul class="project__tech">
+              <li class="project__tech-item">JavaScript (ES6+)</li>
+              <li class="project__tech-item">HTML/CSS/SCSS</li>
+              <li class="project__tech-item">Node.js</li>
+              <li class="project__tech-item">Vue.js</li>
+            </ul>
+            <div class="project__footer">
+              <button class="btn project__btn">Learn more</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact" id="section-contact">
+        <div class="heading">
+          <h2 class="heading__h2"><span class="heading__h2-span">04.</span>Get in Touch</h2>
+        </div>
+        <div class="contact__content">
+          <p class="paragraph contact__paragraph">
+            My inbox is always open for any new opportunities. Whether you have a question or just want to say hi, I’ll try my best to get back to
+            you!
+          </p>
+
+          <button class="btn contacts__btn">Say Hello</button>
+          <ul class="contacts__social">
+            <li class="contacts__social-item">
+              <a href="#" class="contacts__social-link">
+                <svg class="contacts__social-icon"><use xlink:href="img/sprite.svg#icon-envelop"></use></svg>
+              </a>
+            </li>
+            <li class="contacts__social-item">
+              <a href="#" class="contacts__social-link">
+                <svg class="contacts__social-icon"><use xlink:href="img/sprite.svg#icon-instagram"></use></svg>
+              </a>
+            </li>
+            <li class="contacts__social-item">
+              <a href="#" class="contacts__social-link">
+                <svg class="contacts__social-icon"><use xlink:href="img/sprite.svg#icon-telegram"></use></svg>
+              </a>
+            </li>
+            <li class="contacts__social-item">
+              <a href="#" class="contacts__social-link">
+                <svg class="contacts__social-icon"><use xlink:href="img/sprite.svg#icon-twitter"></use></svg>
+              </a>
+            </li>
+            <li class="contacts__social-item">
+              <a href="#" class="contacts__social-link">
+                <svg class="contacts__social-icon"><use xlink:href="img/sprite.svg#icon-github"></use></svg>
+              </a>
+            </li>
+            <li class="contacts__social-item">
+              <a href="#" class="contacts__social-link">
+                <svg class="contacts__social-icon"><use xlink:href="img/sprite.svg#icon-linkedin2"></use></svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+
+    <footer class="footer">&copy; Designed & Built by Svetlana Ko</footer>
+  </body>
+</html>

@@ -8,7 +8,9 @@
 
 html {
   box-sizing: border-box;
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  background-color: #1c1427; }
 
 body {
   font-family: "Open Sans", sans-serif;
@@ -25,7 +27,7 @@ h2 {
 
 .container {
   display: grid;
-  grid-template-rows: 95vh repeat(4, min-content); }
+  grid-template-rows: 95vh 80vh repeat(2, min-content) 80vh; }
 
 .logo-box {
   display: flex;
@@ -35,13 +37,28 @@ h2 {
 .logo {
   height: 3rem; }
 
+.sticky {
+  position: fixed;
+  background-color: rgba(28, 20, 39, 0.8);
+  backdrop-filter: blur(10px); }
+
+.shadow {
+  box-shadow: 0 10px 30px -10px rgba(2, 12, 27, 0.7); }
+
+.nav-hide {
+  transform: translateY(calc(7rem * -1));
+  box-shadow: 0; }
+
 .navigation {
-  background-color: #1c1427;
+  z-index: 1000;
+  height: 7rem;
+  width: 100%;
   padding: 0 3rem;
   display: grid;
   grid-template-columns: min-content 1fr min-content;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  transition: all 0.5s; }
   .navigation__btn {
     grid-column: 3 / -1;
     margin-left: 15px; }
@@ -88,7 +105,7 @@ h2 {
     margin-bottom: 2rem; }
   .header__btn {
     margin-top: 2rem;
-    font-size: 2rem; }
+    font-size: 2.5rem; }
 
 .about {
   background-color: #dedce0;
@@ -168,10 +185,37 @@ h2 {
     background-color: #1c1427; }
 
 .contact {
-  background-color: #dedce0; }
+  background-color: #1c1427; }
+  .contact__content {
+    display: grid;
+    justify-items: center; }
+  .contact__paragraph {
+    width: 40rem;
+    text-align: center;
+    margin-bottom: 3rem; }
+
+.contacts__btn {
+  font-size: 2.5rem;
+  height: 4rem; }
+
+.contacts__social {
+  margin-top: 3rem; }
+  .contacts__social-item {
+    display: inline-block; }
+  .contacts__social-icon {
+    height: 2rem;
+    width: 2rem;
+    fill: #ccffbd;
+    margin: 0.8rem;
+    transition: all 0.3s; }
+    .contacts__social-icon:hover {
+      fill: #7eca9c; }
 
 .footer {
-  background-color: #1c1427; }
+  background-color: #1c1427;
+  height: 8rem;
+  text-align: center;
+  color: #bebdc1; }
 
 .paragraph {
   color: #bebdc1; }
@@ -205,3 +249,6 @@ h2 {
     width: 100%;
     height: 1px;
     background-color: #7eca9c; }
+
+.margin-top {
+  margin-top: 8rem; }

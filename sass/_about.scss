@@ -1,5 +1,5 @@
 .about {
-  background-color: $color-secondary;
+  background-color: $color-primary;
   color: $color-text-main;
   padding: 3rem 20rem;
 
@@ -37,9 +37,9 @@
 
       &::before {
         content: '▹';
-        color: $color-text-dark;
+        color: $color-text-bright;
         position: relative;
-        font-size: 2rem;
+        font-size: 2.5rem;
         line-height: 12px;
         padding-right: 1rem;
       }

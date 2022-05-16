@@ -7,12 +7,13 @@ $nav-height: 7rem;
 }
 
 .logo {
-  height: 3rem;
+  font-size: 3rem;
+  color: $color-primary;
 }
 
 .sticky {
   position: fixed;
-  background-color: rgba($color-primary, 0.8);
+  background-color: rgba($color-secondary, 0.8);
   backdrop-filter: blur(10px);
 }
 
@@ -61,13 +62,13 @@ $nav-height: 7rem;
       transition: all 0.3s;
 
       span {
-        color: $color-text-dark;
+        color: $color-text-light;
         margin-right: 0.5rem;
         display: inline-block;
       }
     }
     &:hover {
-      color: $color-text-dark;
+      color: $color-text-light;
     }
   }
 }

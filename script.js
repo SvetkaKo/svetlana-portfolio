@@ -14,9 +14,13 @@ window.addEventListener(
   function () {
     const st = window.pageYOffset || document.documentElement.scrollTop;
     if (st > lastScrollTop) {
+      console.log(window.pageYOffset);
       nav.classList.add('nav-hide');
       nav.classList.remove('shadow');
       //   console.log('down');
+      // }
+      // if (window.pageYOffset <= 0) {
+      //   nav.classList.remove('sticky', 'shadow');
     } else {
       nav.classList.remove('nav-hide');
       nav.classList.add('sticky', 'shadow');

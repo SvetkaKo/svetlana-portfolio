@@ -17,18 +17,18 @@
   <body>
     <div class="navigation">
       <div class="logo-box">
-        <img src="img/logo.png" alt="logo" class="logo" />
+        <h3 class="logo">SK</h3>
       </div>
       <nav class="navigation__nav">
         <ul class="navigation__list">
           <li class="navigation__item">
-            <a href="#section-about" style="transition-delay: 100ms" class="navigation__link link__scroll-about"><span>01.</span>About</a>
+            <a href="#section-about" class="navigation__link"><span>01.</span>About</a>
           </li>
           <li class="navigation__item">
             <a href="#section-experience" class="navigation__link"><span>02.</span>Experience</a>
           </li>
           <li class="navigation__item">
-            <a href="#section-work" class="navigation__link"><span>03.</span>Work</a>
+            <a href="#section-work" class="navigation__link"><span>03.</span>Projects</a>
           </li>
           <li class="navigation__item">
             <a href="#section-contact" class="navigation__link"><span>04.</span>Contact</a>
@@ -41,9 +41,12 @@
     <div class="container">
       <header class="header">
         <div class="header__text-box">
+          <div class="header__texture"></div>
           <h3 class="header__h3">Hi, my name is</h3>
+          <div class="header__name"></div>
           <h1 class="header__h1-primary">Svetlana Ko</h1>
           <h1 class="header__h1-secondary">I create web experience</h1>
+
           <p class="paragraph">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
             minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -87,12 +90,54 @@
         <div class="heading">
           <h2 class="heading__h2"><span class="heading__h2-span">02.</span>Experience</h2>
         </div>
-        <div class="experience__content">certificates</div>
+        <div class="experience__content">
+          <!-- 1st item -->
+          <div class="cert__item">
+            <div class="cert__item-date">Apr 2022</div>
+            <div class="cert__item-type">Course</div>
+            <div class="cert__item-desc">
+              <h3 class="cert__item-heading header__h3">Advanced CSS and Sass: Flexbox, Grid, Animations and More!</h3>
+              <div class="cert__item-paragraph">
+                The most advanced and modern CSS course on the internet: master flexbox, CSS Grid, responsive design, and so much more.
+              </div>
+              <a href="https://www.udemy.com/certificate/UC-f2ee0a92-f75c-4c15-b556-d7f5a8dc4ee3/" class="cert__item-url">Show credetial</a>
+            </div>
+          </div>
+
+          <!-- 2nd item -->
+          <div class="cert__item">
+            <div class="cert__item-date">Feb 2021</div>
+            <div class="cert__item-type">Course</div>
+            <div class="cert__item-desc">
+              <h3 class="cert__item-heading header__h3">Complete Vue Mastery 2022 (w/ Vuex, Composition API, Router)</h3>
+              <div class="cert__item-paragraph">
+                The latest features with Vue 3 including Composition API, Vuex, Vue Router. Vue Design Patterns. Set up authentication and user
+                accounts
+              </div>
+              <a href="https://www.udemy.com/certificate/UC-7e31cf6f-4d6e-4531-9bee-5cfa7f8c0c8b/" class="cert__item-url">Show credetial</a>
+            </div>
+          </div>
+
+          <!-- 3rd item -->
+          <div class="cert__item">
+            <div class="cert__item-date">Dec 2021</div>
+            <div class="cert__item-type">Course</div>
+            <div class="cert__item-desc">
+              <h3 class="cert__item-heading header__h3">The Complete JavaScript Course 2021</h3>
+              <div class="cert__item-paragraph">
+                Modern ES6+ from the beginning: arrow functions, destructuring, spread operator, optional chaining (ES2020), etc. Asynchronous
+                JavaScript: Event loop, promises, async/await, AJAX calls and APIs Modern OOP: Classes, constructors, prototypal inheritance,
+                encapsulation, etc.
+              </div>
+              <a href="https://www.udemy.com/certificate/UC-487e7859-32d0-4cf1-9ce4-99d72dab52d2/" class="cert__item-url">Show credetial</a>
+            </div>
+          </div>
+        </div>
       </section>
 
       <section class="work" id="section-work">
         <div class="heading">
-          <h2 class="heading__h2"><span class="heading__h2-span">03.</span>Work</h2>
+          <h2 class="heading__h2"><span class="heading__h2-span">03.</span>Projects</h2>
         </div>
         <div class="work__content">
           <!-- project 1 -->
@@ -167,8 +212,7 @@
         </div>
         <div class="contact__content">
           <p class="paragraph contact__paragraph">
-            My inbox is always open for any new opportunities. Whether you have a question or just want to say hi, I’ll try my best to get back to
-            you!
+            My inbox is always open for new opportunities. Whether you have a question or just want to say hi, I’ll try my best to get back to you!
           </p>
 
           <button class="btn contacts__btn">Say Hello</button>

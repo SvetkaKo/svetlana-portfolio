@@ -1,6 +1,5 @@
 .work {
-  background-color: $color-tertiary;
-  padding: 3rem 20rem;
+  background-color: $color-primary;
 
   &__content {
     display: grid;
@@ -10,7 +9,7 @@
 }
 
 .project {
-  background-color: $color-secondary-light;
+  background-color: $color-primary-light;
   color: $color-text-main;
   border-radius: 1rem;
   overflow: hidden;

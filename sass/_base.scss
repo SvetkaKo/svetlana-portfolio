@@ -1,13 +1,33 @@
-$color-primary: #1c1427;
-$color-secondary: #dedce0;
-$color-secondary-light: #fdfcff;
+// $color-primary: #1c1427;
+// $color-secondary: #dedce0;
+// $color-secondary-light: #fdfcff;
 
-$color-tertiary: #40394a;
+// $color-tertiary: #40394a;
 
-$color-text-dark: #7eca9c;
-$color-text-light: #ccffbd;
+// $color-text-dark: #7eca9c;
+// $color-text-light: #ccffbd;
+// $color-text-main: #000000;
+// $color-text-second: #393939;
+// $color-text-grey: #bebdc1;
+
+$color-primary: #ffffff;
+$color-primary-light: #fdfcff;
+
+$color-secondary: #252e32;
+
+$color-tertiary: #6d8189;
+$color-tertiary-light: #d5d8d9;
+$color-tertiary-light-2: #e3e7e8;
+
+$color-text-bright: #ba2b81;
+
+$color-text-dark: #252e32;
+$color-text-medium: #8ba4ae;
+
+$color-text-light: #9ec7d9;
 $color-text-main: #000000;
-$color-text-grey: #bebdc1;
+$color-text-second: #393939;
+$color-text-grey: #c7d7dd;
 
 $navy-shadow: rgba(2, 12, 27, 0.7);
 
@@ -32,7 +52,8 @@ html {
   box-sizing: border-box;
   font-size: 62.5%; // 10px/16px = 62.5% -> 1rem = 10px
   scroll-behavior: smooth;
-  background-color: $color-primary;
+  background-color: $color-secondary;
+  color: $color-text-main;
 }
 
 body {
@@ -40,7 +61,10 @@ body {
   font-weight: 300;
   line-height: 1.6;
   font-size: 1.4rem;
-  color: $color-text-light;
+}
+
+section {
+  padding: 3rem 20rem;
 }
 
 h1 {
@@ -51,7 +75,14 @@ h2 {
   font-size: 2.5rem;
 }
 
+hr {
+  border-top: 1px solid $color-text-grey;
+  width: 50%;
+  border-bottom: none;
+  margin: auto;
+}
+
 .container {
   display: grid;
-  grid-template-rows: 95vh 80vh repeat(2, min-content) 80vh;
+  grid-template-rows: repeat(4, minmax(min-content, 100vh)) 80vh 10vh;
 }

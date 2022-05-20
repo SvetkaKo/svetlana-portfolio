@@ -15,16 +15,21 @@ $nav-height: 7rem;
   position: fixed;
   background-color: rgba($color-secondary, 0.8);
   backdrop-filter: blur(10px);
+  box-shadow: 0 10px 30px -10px $navy-shadow;
 }
 
-.shadow {
-  box-shadow: 0 10px 30px -10px $navy-shadow;
+.nav-back {
+  background-color: $color-secondary;
 }
 
 .nav-hide {
   transform: translateY(calc(7rem * -1));
   box-shadow: 0;
 }
+
+// .shadow {
+//   box-shadow: 0 10px 30px -10px $navy-shadow;
+// }
 
 .navigation {
   z-index: 1000;
@@ -35,9 +40,7 @@ $nav-height: 7rem;
   grid-template-columns: min-content 1fr min-content;
   justify-content: center;
   align-items: center;
-  transition: all 0.5s;
-
-  &__btn {
+  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) &__btn {
     grid-column: 3 / -1;
     margin-left: 15px;
   }

@@ -6,11 +6,15 @@
   padding: 0.75rem 1rem;
   line-height: 0.8;
   transition: all 0.3s;
-  background-color: transparent;
+  background-color: rgba($color-text-light, 0.15);
 
   &:hover {
-    background-color: rgba($color-text-light, 0.15);
+    background-color: rgba($color-text-light, 0.3);
   }
+}
+
+.btn-1 {
+  background-image: linear-gradient(left, #06bc9b, #1ba49c);
 }
 
 .heading {

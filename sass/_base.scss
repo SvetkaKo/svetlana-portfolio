@@ -15,21 +15,22 @@ $color-primary-light: #fdfcff;
 
 $color-secondary: #252e32;
 
-$color-tertiary: #6d8189;
+$color-tertiary: #065749;
 $color-tertiary-light: #d5d8d9;
 $color-tertiary-light-2: #e3e7e8;
 
-$color-text-bright: #ba2b81;
+$color-text-bright: #f8b400;
 
-$color-text-dark: #252e32;
-$color-text-medium: #8ba4ae;
+$color-text-main: #3f3f3f;
+$color-text-dark: #036047;
+$color-text-medium: #049e75;
 
-$color-text-light: #9ec7d9;
-$color-text-main: #000000;
+$color-text-light: #01d59c;
+
 $color-text-second: #393939;
-$color-text-grey: #c7d7dd;
+$color-text-grey: #a6afb2;
 
-$navy-shadow: rgba(2, 12, 27, 0.7);
+$navy-shadow: rgba(129, 129, 129, 0.211);
 
 // FONT VARIABLES
 $font-primary: 'Open Sans', sans-serif;
@@ -61,10 +62,11 @@ body {
   font-weight: 300;
   line-height: 1.6;
   font-size: 1.4rem;
+  background: #fff url(../img/bg.png) repeat;
 }
 
 section {
-  padding: 3rem 20rem;
+  padding: 9rem 20rem;
   transition: transform 1s, opacity 1s;
 }
 
@@ -85,7 +87,10 @@ hr {
 
 .container {
   display: grid;
+  margin: auto;
   grid-template-rows: repeat(4, minmax(min-content, 100vh)) 80vh 10vh;
+  width: 80%;
+  background-color: $color-primary;
 }
 
 .section--hidden {

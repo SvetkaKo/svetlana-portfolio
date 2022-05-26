@@ -1,6 +1,6 @@
 .experience {
   position: relative;
-  background-image: linear-gradient(rgba($color-primary, 0.95), rgba($color-primary, 0.95)), url(/img/exp.jpg);
+  // background-image: linear-gradient(rgba($color-primary, 0.95), rgba($color-primary, 0.95)), url(/img/exp.jpg);
   background-size: cover;
   background-position: top;
   color: $color-text-main;
@@ -13,7 +13,7 @@
 
 .cert__item {
   display: grid;
-  grid-template-columns: 12rem 12rem 1fr;
+  grid-template-columns: 12rem 1fr;
   transition: all 0.5s;
   border-radius: 3px;
   background-color: $color-tertiary-light;

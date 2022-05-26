@@ -13,25 +13,37 @@ $nav-height: 7rem;
 
 .sticky {
   position: fixed;
-  background-color: rgba($color-secondary, 0.8);
+  background-color: rgba($color-primary, 0.7);
   backdrop-filter: blur(10px);
   box-shadow: 0 10px 30px -10px $navy-shadow;
+  border-bottom: none;
+}
+
+.sticky-light {
+  position: fixed;
+  background-color: rgba($color-primary, 0.5);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 10px 30px -10px $navy-shadow;
+  border-bottom: solid 1px $color-text-grey;
 }
 
 .nav-back {
-  background-color: $color-secondary;
-}
-
-.nav-hide {
-  transform: translateY(calc(7rem * -1));
+  background-color: $color-primary;
+  position: fixed;
   box-shadow: 0;
 }
+
+// .nav-hide {
+//   transform: translateY(calc(7.5rem * -1));
+//   box-shadow: 0;
+// }
 
 // .shadow {
 //   box-shadow: 0 10px 30px -10px $navy-shadow;
 // }
 
 .navigation {
+  color: $color-text-grey;
   z-index: 1000;
   height: $nav-height;
   width: 100%;
@@ -40,7 +52,11 @@ $nav-height: 7rem;
   grid-template-columns: min-content 1fr min-content;
   justify-content: center;
   align-items: center;
-  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) &__btn {
+  transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+  // border-bottom: solid 1px $color-text-grey;
+  // border-bottom: none;
+
+  &__btn {
     grid-column: 3 / -1;
     margin-left: 15px;
   }

@@ -9,6 +9,29 @@ console.log(navHeight);
 
 let lastScrollTop = 0;
 
+// window.addEventListener(
+//   'scroll',
+//   function () {
+//     const st = window.pageYOffset || document.documentElement.scrollTop;
+//     if (st > lastScrollTop) {
+//       console.log(window.pageYOffset);
+//       console.log(document.documentElement.scrollTop);
+//       nav.classList.add('nav-hide');
+//       nav.classList.remove('sticky');
+//       // console.log('down');
+//     } else if (document.documentElement.scrollTop <= 70) {
+//       // console.log('top');
+//       nav.classList.add('nav-back');
+//     } else {
+//       nav.classList.remove('nav-hide', 'nav-back', 'sticky');
+//       nav.classList.add('sticky');
+//       //   console.log('up');
+//     }
+//     lastScrollTop = st <= 0 ? 0 : st; // For Mobile or negative scrolling
+//   },
+//   false
+// );
+
 window.addEventListener(
   'scroll',
   function () {
@@ -16,14 +39,15 @@ window.addEventListener(
     if (st > lastScrollTop) {
       console.log(window.pageYOffset);
       console.log(document.documentElement.scrollTop);
-      nav.classList.add('nav-hide');
-      nav.classList.remove('sticky');
+      nav.classList.add('sticky-light');
+      nav.classList.remove('sticky', 'nav-back');
       // console.log('down');
-    } else if (document.documentElement.scrollTop <= 70) {
+    } else if (document.documentElement.scrollTop <= 60) {
       // console.log('top');
       nav.classList.add('nav-back');
+      nav.classList.remove('sticky', 'sticky-light');
     } else {
-      nav.classList.remove('nav-hide', 'nav-back', 'sticky');
+      nav.classList.remove('nav-back', 'sticky-light');
       nav.classList.add('sticky');
       //   console.log('up');
     }

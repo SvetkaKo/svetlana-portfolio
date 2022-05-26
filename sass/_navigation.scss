@@ -13,19 +13,30 @@ $nav-height: 7rem;
 
 .sticky {
   position: fixed;
-  background-color: rgba($color-secondary, 0.8);
+  background-color: rgba($color-primary, 0.7);
   backdrop-filter: blur(10px);
   box-shadow: 0 10px 30px -10px $navy-shadow;
+  border-bottom: none;
+}
+
+.sticky-light {
+  position: fixed;
+  background-color: rgba($color-primary, 0.5);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 10px 30px -10px $navy-shadow;
+  border-bottom: solid 1px $color-text-grey;
 }
 
 .nav-back {
-  background-color: $color-secondary;
-}
-
-.nav-hide {
-  transform: translateY(calc(7rem * -1));
+  background-color: $color-primary;
+  position: fixed;
   box-shadow: 0;
 }
+
+// .nav-hide {
+//   transform: translateY(calc(7rem * -1));
+//   box-shadow: 0;
+// }
 
 // .shadow {
 //   box-shadow: 0 10px 30px -10px $navy-shadow;

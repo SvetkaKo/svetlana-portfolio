@@ -53,15 +53,21 @@ hr {
 
 .sticky {
   position: fixed;
-  background-color: rgba(37, 46, 50, 0.8);
+  background-color: rgba(255, 255, 255, 0.7);
   backdrop-filter: blur(10px);
-  box-shadow: 0 10px 30px -10px rgba(2, 12, 27, 0.7); }
+  box-shadow: 0 10px 30px -10px rgba(2, 12, 27, 0.7);
+  border-bottom: none; }
+
+.sticky-light {
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 10px 30px -10px rgba(2, 12, 27, 0.7);
+  border-bottom: solid 1px #c7d7dd; }
 
 .nav-back {
-  background-color: #252e32; }
-
-.nav-hide {
-  transform: translateY(calc(7rem * -1));
+  background-color: #ffffff;
+  position: fixed;
   box-shadow: 0; }
 
 .navigation {

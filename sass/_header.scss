@@ -1,61 +1,38 @@
 .header {
   padding: 20rem 8rem;
-
-  display: grid;
   justify-content: center;
-
   background-image: linear-gradient(45deg, rgba($color-primary, 1), rgba($color-primary, 0.95), rgba($color-primary, 0.8)), url(/img/header.jpg);
   position: relative;
   background-size: cover;
   background-position: top;
 
   &__text-box {
-    z-index: 20;
+    height: 100%;
+    background-image: linear-gradient(90deg, rgba($color-primary-light, 0.8), rgba($color-primary-light, 0.1));
+    padding: 2rem;
     grid-column: 1 / 2;
-    width: 60%;
-    margin-left: 5rem;
-    // display: grid;
-  }
-
-  &__texture {
-    width: 75rem;
-    height: 19rem;
-    position: absolute;
-    background-color: rgba($color-tertiary, 0.2);
-    transform: translateX(-2.5rem);
-    border-radius: 8px 8px 0px 0px;
-    z-index: 8;
-  }
-
-  &__name {
-    position: absolute;
-    height: 8rem;
-    width: 42rem;
-    background-image: linear-gradient(200deg, rgba($color-tertiary, 0.9), rgba($color-secondary, 0.9));
-    transform: translateX(-4.5rem);
-    border-radius: 8px;
-    z-index: 9;
+    width: 85%;
   }
 
   &__h1-primary {
     position: relative;
-    color: $color-text-grey;
     line-height: 1.2;
     z-index: 11;
   }
 
   &__h1-secondary {
-    color: $color-text-dark;
-    z-index: 11;
+    color: $color-bright;
+    line-height: 1;
+  }
+
+  &__p {
+    padding: 3rem 0 2rem;
+    width: 80%;
   }
 
   &__btn {
     margin-top: 2rem;
     font-size: 2.5rem;
-    color: $color-text-bright !important;
-
-    &:hover {
-      background-color: rgba($color-text-bright, 0.15) !important;
-    }
+    // color: $color-text-bright !important;
   }
 }

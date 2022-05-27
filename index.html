@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&subset=cyrillic" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;700&display=swap" rel="stylesheet" />
 
     <link rel="stylesheet" href="css/style.css" />
     <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
@@ -41,17 +43,15 @@
     <div class="container">
       <header class="header">
         <div class="header__text-box">
-          <div class="header__texture"></div>
           <h3 class="header__h3">Hi, my name is</h3>
-          <div class="header__name"></div>
           <h1 class="header__h1-primary">Svetlana Ko</h1>
           <h1 class="header__h1-secondary">I create web experience</h1>
-
-          <p class="paragraph">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-            minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          <p class="paragraph header__p">
+            An enthusiastic person with a passion for building (and occasionally designing) exceptional digital experiences. Currently, I’m focused on
+            studying UI/UX Design and the front-end of the web. See more on
+            <a class="link" href="https://github.com/SvetkaKo">Github</a>
           </p>
-          <button class="btn header__btn">Get in Touch</button>
+          <!-- <button class="btn header__btn">Get in Touch</button> -->
         </div>
       </header>
 
@@ -63,14 +63,10 @@
         <div class="about__content">
           <div class="about__content-text">
             <p>
-              Auctor neque vitae tempus quam pellentesque nec nam aliquam sem. Blandit turpis cursus in hac habitasse. Purus viverra accumsan in nisl.
-              Cras sed felis eget velit aliquet sagittis. Elit eget gravida cum sociis natoque penatibus et magnis dis.
+              Hello! My name is Svetlana, and I enjoy creating curious things with code. My interest in web development started back in 2020 when I
+              decided to learn web development and UX/UI Design. Since then it's become a huge part of my life.
             </p>
-            <p>
-              Malesuada bibendum arcu vitae elementum curabitur vitae nunc sed velit. Eget egestas purus viverra accumsan in nisl nisi scelerisque eu.
-              Sed velit dignissim sodales ut. Turpis massa sed elementum tempus egestas sed. Convallis tellus id interdum velit laoreet id donec
-              ultrices tincidunt.
-            </p>
+            <p>My main focus these days is building inclusive products and digital experiences.</p>
             <div class="skils">
               <h4 class="about__h4">Here are a few technologies I’ve been working with recently:</h4>
             </div>
@@ -81,8 +77,9 @@
               <li class="about__skils-item">Vue.js</li>
             </ul>
           </div>
-
-          <img class="about__picture-1" src="./img/about.jpg" alt="About me" />
+          <div class="about__border">
+            <img class="about__picture-1" src="./img/foto-2.jpg" alt="About me" />
+          </div>
         </div>
       </section>
 
@@ -94,7 +91,7 @@
           <!-- 1st item -->
           <div class="cert__item">
             <div class="cert__item-date">Apr 2022</div>
-            <div class="cert__item-type">Course</div>
+
             <div class="cert__item-desc">
               <h3 class="cert__item-heading header__h3">Advanced CSS and Sass: Flexbox, Grid, Animations and More!</h3>
               <div class="cert__item-paragraph">
@@ -107,7 +104,7 @@
           <!-- 2nd item -->
           <div class="cert__item">
             <div class="cert__item-date">Feb 2021</div>
-            <div class="cert__item-type">Course</div>
+
             <div class="cert__item-desc">
               <h3 class="cert__item-heading header__h3">Complete Vue Mastery 2022 (w/ Vuex, Composition API, Router)</h3>
               <div class="cert__item-paragraph">
@@ -121,7 +118,7 @@
           <!-- 3rd item -->
           <div class="cert__item">
             <div class="cert__item-date">Dec 2021</div>
-            <div class="cert__item-type">Course</div>
+
             <div class="cert__item-desc">
               <h3 class="cert__item-heading header__h3">The Complete JavaScript Course 2021</h3>
               <div class="cert__item-paragraph">
@@ -143,66 +140,96 @@
           <!-- project 1 -->
           <div class="project">
             <img src="img/house-1.jpeg" alt="img" class="project__img" />
+            <div class="project__header">
+              <h3 class="project__name">Project name</h3>
 
-            <h3 class="project__name">Project name</h3>
+              <div class="web-item project__web-item">
+                <a href="#" class="web-link">
+                  <svg class="web-icon"><use xlink:href="img/sprite.svg#icon-github"></use></svg>
+                </a>
+              </div>
+              <div class="web-item project__web-item">
+                <a href="#" class="web-link">
+                  <svg class="web-icon"><use xlink:href="img/sprite-sphere.svg#icon-sphere"></use></svg>
+                </a>
+              </div>
+            </div>
             <div class="project__discription">
               <p>
                 Malesuada bibendum arcu vitae elementum curabitur vitae nunc sed velit. Eget egestas purus viverra accumsan in nisl nisi scelerisque
                 eu.
               </p>
-            </div>
-            <ul class="project__tech">
-              <li class="project__tech-item">JavaScript (ES6+)</li>
-              <li class="project__tech-item">HTML/CSS/SCSS</li>
-              <li class="project__tech-item">Node.js</li>
-              <li class="project__tech-item">Vue.js</li>
-            </ul>
-            <div class="project__footer">
-              <button class="btn project__btn">Learn more</button>
+              <ul class="project__tech">
+                <li class="project__tech-item">JavaScript (ES6+)</li>
+                <li class="project__tech-item">HTML/CSS/SCSS</li>
+                <li class="project__tech-item">Node.js</li>
+                <li class="project__tech-item">Vue.js</li>
+              </ul>
             </div>
           </div>
           <!-- project 1 -->
           <div class="project">
             <img src="img/house-1.jpeg" alt="img" class="project__img" />
+            <div class="project__header">
+              <h3 class="project__name">Project name</h3>
 
-            <h3 class="project__name">Project name</h3>
+              <div class="web-item project__web-item">
+                <a href="#" class="web-link">
+                  <svg class="web-icon"><use xlink:href="img/sprite.svg#icon-github"></use></svg>
+                </a>
+              </div>
+              <div class="web-item project__web-item">
+                <a href="#" class="web-link">
+                  <svg class="web-icon"><use xlink:href="img/sprite-sphere.svg#icon-sphere"></use></svg>
+                </a>
+              </div>
+            </div>
             <div class="project__discription">
               <p>
                 Malesuada bibendum arcu vitae elementum curabitur vitae nunc sed velit. Eget egestas purus viverra accumsan in nisl nisi scelerisque
                 eu.
               </p>
-            </div>
-            <ul class="project__tech">
-              <li class="project__tech-item">JavaScript (ES6+)</li>
-              <li class="project__tech-item">HTML/CSS/SCSS</li>
-              <li class="project__tech-item">Node.js</li>
-              <li class="project__tech-item">Vue.js</li>
-            </ul>
-            <div class="project__footer">
-              <button class="btn project__btn">Learn more</button>
+              <ul class="project__tech">
+                <li class="project__tech-item">JavaScript (ES6+)</li>
+                <li class="project__tech-item">HTML/CSS/SCSS</li>
+                <li class="project__tech-item">Node.js</li>
+                <li class="project__tech-item">Vue.js</li>
+              </ul>
             </div>
           </div>
           <!-- project 1 -->
           <div class="project">
             <img src="img/house-1.jpeg" alt="img" class="project__img" />
+            <div class="project__header">
+              <h3 class="project__name">Project name</h3>
 
-            <h3 class="project__name">Project name</h3>
+              <div class="web-item project__web-item">
+                <a href="#" class="web-link">
+                  <svg class="web-icon"><use xlink:href="img/sprite.svg#icon-github"></use></svg>
+                </a>
+              </div>
+              <div class="web-item project__web-item">
+                <a href="#" class="web-link">
+                  <svg class="web-icon"><use xlink:href="img/sprite-sphere.svg#icon-sphere"></use></svg>
+                </a>
+              </div>
+            </div>
             <div class="project__discription">
               <p>
                 Malesuada bibendum arcu vitae elementum curabitur vitae nunc sed velit. Eget egestas purus viverra accumsan in nisl nisi scelerisque
                 eu.
               </p>
-            </div>
-            <ul class="project__tech">
-              <li class="project__tech-item">JavaScript (ES6+)</li>
-              <li class="project__tech-item">HTML/CSS/SCSS</li>
-              <li class="project__tech-item">Node.js</li>
-              <li class="project__tech-item">Vue.js</li>
-            </ul>
-            <div class="project__footer">
-              <button class="btn project__btn">Learn more</button>
+              <ul class="project__tech">
+                <li class="project__tech-item">JavaScript (ES6+)</li>
+                <li class="project__tech-item">HTML/CSS/SCSS</li>
+                <li class="project__tech-item">Node.js</li>
+                <li class="project__tech-item">Vue.js</li>
+              </ul>
             </div>
           </div>
+        </div>
+        <div class="btn-center">
+          <button class="btn project__btn">See more projects on Github</button>
         </div>
       </section>
 
@@ -216,35 +243,35 @@
           </p>
 
           <button class="btn contacts__btn">Say Hello</button>
-          <ul class="contacts__social">
-            <li class="contacts__social-item">
-              <a href="#" class="contacts__social-link">
-                <svg class="contacts__social-icon"><use xlink:href="img/sprite.svg#icon-envelop"></use></svg>
+          <ul class="web">
+            <li class="web-item">
+              <a href="#" class="web-link">
+                <svg class="web-icon"><use xlink:href="img/sprite.svg#icon-envelop"></use></svg>
               </a>
             </li>
-            <li class="contacts__social-item">
-              <a href="#" class="contacts__social-link">
-                <svg class="contacts__social-icon"><use xlink:href="img/sprite.svg#icon-instagram"></use></svg>
+            <li class="web-item">
+              <a href="#" class="web-link">
+                <svg class="web-icon"><use xlink:href="img/sprite.svg#icon-instagram"></use></svg>
               </a>
             </li>
-            <li class="contacts__social-item">
-              <a href="#" class="contacts__social-link">
-                <svg class="contacts__social-icon"><use xlink:href="img/sprite.svg#icon-telegram"></use></svg>
+            <li class="web-item">
+              <a href="#" class="web-link">
+                <svg class="web-icon"><use xlink:href="img/sprite.svg#icon-telegram"></use></svg>
               </a>
             </li>
-            <li class="contacts__social-item">
-              <a href="#" class="contacts__social-link">
-                <svg class="contacts__social-icon"><use xlink:href="img/sprite.svg#icon-twitter"></use></svg>
+            <li class="web-item">
+              <a href="#" class="web-link">
+                <svg class="web-icon"><use xlink:href="img/sprite.svg#icon-twitter"></use></svg>
               </a>
             </li>
-            <li class="contacts__social-item">
-              <a href="#" class="contacts__social-link">
-                <svg class="contacts__social-icon"><use xlink:href="img/sprite.svg#icon-github"></use></svg>
+            <li class="web-item">
+              <a href="#" class="web-link">
+                <svg class="web-icon"><use xlink:href="img/sprite.svg#icon-github"></use></svg>
               </a>
             </li>
-            <li class="contacts__social-item">
-              <a href="#" class="contacts__social-link">
-                <svg class="contacts__social-icon"><use xlink:href="img/sprite.svg#icon-linkedin2"></use></svg>
+            <li class="web-item">
+              <a href="#" class="web-link">
+                <svg class="web-icon"><use xlink:href="img/sprite.svg#icon-linkedin2"></use></svg>
               </a>
             </li>
           </ul>
@@ -252,6 +279,8 @@
       </section>
     </div>
 
-    <footer class="footer">2022 &copy; Designed & Built by Svetlana Ko</footer>
+    <footer class="footer">
+      <p class="paragraph">2022 &copy; Designed & Built by Svetlana Ko</p>
+    </footer>
   </body>
 </html>

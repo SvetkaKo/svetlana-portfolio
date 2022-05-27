@@ -8,64 +8,59 @@
   &__content {
     display: grid;
     grid-gap: 1.25rem;
+    background-color: $color-primary-light;
+    padding: 2rem;
   }
 }
 
 .cert__item {
   display: grid;
-  grid-template-columns: 12rem 12rem 1fr;
+  grid-template-columns: 12rem 1fr;
   transition: all 0.5s;
   border-radius: 3px;
-  background-color: $color-tertiary-light;
+  transition: all 0.3s;
+  border-radius: 2px;
 
   &:hover {
     box-shadow: 10px 10px 20px -10px $navy-shadow;
-    background-color: $color-tertiary-light-2;
+    transform: translate(-0.5rem, -0.5rem);
   }
 
   &-date {
-    // background-color: orangered;
+    background-color: $color-tertiary-light;
     text-align: center;
     font-size: 1.75rem;
     padding: 0.5rem 2rem;
-    color: $color-tertiary;
   }
 
   &-type {
     text-align: center;
     font-size: 1.75rem;
     padding: 0.5rem 2rem;
-    color: $color-text-light;
+    // color: $color-text-light;
   }
 
   &-heading {
     text-decoration: underline;
     font-size: 1.75rem;
-    color: $color-secondary;
+    color: $color-bright;
   }
 
   &-desc {
-    // background-color: yellow;
+    background-color: $color-secondary-light;
     padding: 0.5rem 2rem;
-    color: $color-text-second;
   }
 
   &-paragraph {
     padding: 0.5rem 0;
-    color: $color-text-second;
   }
 
   &-url {
     margin-top: 1rem;
     text-decoration: none;
-    color: $color-text-dark;
     padding: 1px 2px;
     border-bottom: solid 1px;
-    color: $color-text-bright;
     transition: all 0.5s;
-
-    &:hover {
-      background-color: rgba($color-text-bright, 0.1);
-    }
+    color: $color-bright;
   }
 }

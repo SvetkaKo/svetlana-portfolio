@@ -1,4 +1,4 @@
-$nav-height: 7rem;
+$nav-height: 6rem;
 
 .logo-box {
   display: flex;
@@ -13,6 +13,7 @@ $nav-height: 7rem;
 
 .sticky {
   position: fixed;
+  // background-image: linear-gradient(180deg, rgba($color-primary, 0.5), rgba($color-tertiary-light, 0.5));
   background-color: rgba($color-primary, 0.7);
   backdrop-filter: blur(10px);
   box-shadow: 0 10px 30px -10px $navy-shadow;
@@ -21,37 +22,32 @@ $nav-height: 7rem;
 
 .sticky-light {
   position: fixed;
+
   background-color: rgba($color-primary, 0.5);
   backdrop-filter: blur(10px);
   box-shadow: 0 10px 30px -10px $navy-shadow;
-  border-bottom: solid 1px $color-text-grey;
 }
 
 .nav-back {
-  background-color: $color-primary;
+  background-color: $color-tertiary-light;
+  color: $color-secondary-light;
   position: fixed;
   box-shadow: 0;
 }
 
-// .nav-hide {
-//   transform: translateY(calc(7rem * -1));
-//   box-shadow: 0;
-// }
-
-// .shadow {
-//   box-shadow: 0 10px 30px -10px $navy-shadow;
-// }
-
 .navigation {
   z-index: 1000;
   height: $nav-height;
+  font-weight: 400;
   width: 100%;
   padding: 0 3rem;
   display: grid;
   grid-template-columns: min-content 1fr min-content;
   justify-content: center;
   align-items: center;
-  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) &__btn {
+  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+
+  &__btn {
     grid-column: 3 / -1;
     margin-left: 15px;
   }
@@ -76,13 +72,13 @@ $nav-height: 7rem;
       transition: all 0.3s;
 
       span {
-        color: $color-text-light;
+        color: $color-bright;
         margin-right: 0.5rem;
         display: inline-block;
       }
     }
     &:hover {
-      color: $color-text-light;
+      color: $color-bright;
     }
   }
 }

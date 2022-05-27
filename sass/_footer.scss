@@ -1,6 +1,7 @@
 .footer {
-  background-color: $color-secondary;
+  background-color: $color-tertiary-light;
   height: 8rem;
   text-align: center;
-  color: $color-text-medium;
+  display: grid;
+  align-items: center;
 }

@@ -1,46 +1,72 @@
 .work {
   background-color: $color-primary;
+  position: relative;
 
   &__content {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(33rem, 1fr));
     grid-gap: 7rem;
   }
 }
 
 .project {
   background-color: $color-primary-light;
-  color: $color-text-main;
-  border-radius: 1rem;
-  overflow: hidden;
+  padding: 1rem;
+  border-radius: 2px;
   display: grid;
+  transition: all 0.3s;
+
+  &:hover {
+    transform: translateY(-1rem);
+    box-shadow: 10px 10px 20px -10px $navy-shadow;
+  }
+
+  &__header {
+    background-color: $color-tertiary-light;
+    height: 4.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // align-self: stretch;
+  }
 
   &__img {
     width: 100%;
   }
 
   &__name {
-    justify-self: center;
+    justify-self: start;
     width: 100%;
-    text-align: center;
-    padding: 0.5rem;
-    background-color: $color-primary;
-    color: white;
-    font-weight: 400;
+    padding-left: 3rem;
+    font-weight: 500;
   }
 
   &__discription {
     padding: 1rem;
+    background-color: $color-secondary-light;
+  }
+
+  &__tech {
+    padding-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(10rem, 1fr));
+    grid-gap: 1rem;
+
+    &-item {
+      display: inline-block;
+      text-decoration: none;
+    }
+  }
+
+  &__web-item {
+    padding: 0 0.5rem;
+    justify-items: center;
   }
 
   &__btn {
-    margin: 1rem;
-    width: 15rem;
-  }
-
-  &__footer {
-    display: grid;
-    justify-content: center;
-    background-color: $color-primary;
+    width: 30rem;
+    font-size: 1.9rem;
+    height: 4rem;
+    transform: translateX(50%);
   }
 }

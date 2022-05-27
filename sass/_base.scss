@@ -1,38 +1,23 @@
-// $color-primary: #1c1427;
-// $color-secondary: #dedce0;
-// $color-secondary-light: #fdfcff;
+$color-primary: #f6f5f5;
+$color-primary-light: #ffffff;
 
-// $color-tertiary: #40394a;
+$color-secondary: #d3e0ea;
+$color-secondary-light: #e8edf1;
 
-// $color-text-dark: #7eca9c;
-// $color-text-light: #ccffbd;
-// $color-text-main: #000000;
-// $color-text-second: #393939;
-// $color-text-grey: #bebdc1;
+$color-tertiary: #1687a7;
+$color-tertiary-light: #93c0cc;
+// $color-tertiary-light: #d5d8d9;
+$color-tertiary-light-2: #93c0cc;
 
-$color-primary: #ffffff;
-$color-primary-light: #fdfcff;
+$color-bright: #276678;
+$color-bright-light: #79a5b0;
 
-$color-secondary: #252e32;
+$color-text-main: #0f2a32;
 
-$color-tertiary: #6d8189;
-$color-tertiary-light: #d5d8d9;
-$color-tertiary-light-2: #e3e7e8;
-
-$color-text-bright: #ba2b81;
-
-$color-text-dark: #252e32;
-$color-text-medium: #8ba4ae;
-
-$color-text-light: #9ec7d9;
-$color-text-main: #000000;
-$color-text-second: #393939;
-$color-text-grey: #c7d7dd;
-
-$navy-shadow: rgba(2, 12, 27, 0.7);
+$navy-shadow: rgba(171, 176, 182, 0.7);
 
 // FONT VARIABLES
-$font-primary: 'Open Sans', sans-serif;
+$font-primary: 'Inconsolata', monospace;
 
 // RESPONSIVE
 $bp-largest: 75em; // 1200px
@@ -52,19 +37,19 @@ html {
   box-sizing: border-box;
   font-size: 62.5%; // 10px/16px = 62.5% -> 1rem = 10px
   scroll-behavior: smooth;
-  // background-color: $color-secondary;
   color: $color-text-main;
 }
 
 body {
   font-family: $font-primary;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.6;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
+  background-color: $color-primary;
 }
 
 section {
-  padding: 3rem 20rem;
+  padding: 6rem 18rem;
   transition: transform 1s, opacity 1s;
 }
 
@@ -76,19 +61,28 @@ h2 {
   font-size: 2.5rem;
 }
 
+h3 {
+  font-size: 1.9rem;
+}
+
 hr {
-  border-top: 1px solid $color-text-grey;
+  // border-top: 1px solid $color-text-grey;
   width: 50%;
   border-bottom: none;
   margin: auto;
 }
 
+.hidden {
+  opacity: 0;
+}
+
 .container {
   display: grid;
-  grid-template-rows: repeat(4, minmax(min-content, 100vh)) 80vh 10vh;
+  grid-template-rows: repeat(4, minmax(min-content, 100vh)) 85vh;
+  margin: auto;
 }
 
 .section--hidden {
   opacity: 0;
-  transform: translateY(8rem);
+  transform: translateY(2rem);
 }

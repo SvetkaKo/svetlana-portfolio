@@ -1,5 +1,5 @@
 .contact {
-  background-color: $color-tertiary-light;
+  // background-color: $color-tertiary-light;
   //   position: relative;
   // background-image: linear-gradient(45deg, rgba($color-tertiary-light, 0.9), rgba($color-tertiary-light, 0.9)), url(/img/contact.jpg);
   // background-size: cover;
@@ -21,30 +21,14 @@
   &__btn {
     font-size: 2.5rem;
     height: 4rem;
-    color: $color-text-bright !important;
+    margin-bottom: 2rem;
 
     &:hover {
-      background-color: rgba($color-text-bright, 0.15) !important;
+      background-color: rgba($color-bright, 0.15) !important;
     }
   }
 
   &__social {
     margin-top: 3rem;
-
-    &-item {
-      display: inline-block;
-    }
-
-    &-icon {
-      height: 2rem;
-      width: 2rem;
-      fill: $color-text-light;
-      margin: 0.8rem;
-      transition: all 0.3s;
-
-      &:hover {
-        fill: $color-tertiary;
-      }
-    }
   }
 }

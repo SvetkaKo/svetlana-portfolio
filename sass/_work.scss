@@ -13,8 +13,12 @@
   background-color: $color-primary-light;
   padding: 1rem;
   border-radius: 2px;
+  // display: flex;
+  // flex-direction: column;
   display: grid;
+  grid-template-rows: repeat(2, min-content) 1fr min-content;
   transition: all 0.3s;
+  border-radius: 2px;
 
   &:hover {
     transform: translateY(-1rem);
@@ -32,41 +36,41 @@
 
   &__img {
     width: 100%;
+    border: solid 1px $color-secondary-light;
   }
 
   &__name {
     justify-self: start;
     width: 100%;
-    padding-left: 3rem;
-    font-weight: 500;
+    padding-left: 1rem;
+    color: $color-bright;
   }
 
   &__discription {
-    padding: 1rem;
-    background-color: $color-secondary-light;
+    &-p {
+      padding: 1rem;
+    }
   }
 
   &__tech {
-    padding-top: 2rem;
-    display: grid;
-    grid-template-columns: repeat(2, minmax(10rem, 1fr));
-    grid-gap: 1rem;
+    display: flex;
+    align-items: flex-end;
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    padding: 0px;
+    margin: 2rem 0px 0px;
+    list-style: none;
 
     &-item {
-      display: inline-block;
-      text-decoration: none;
+      margin: 0.5rem 0.5rem;
+      padding: 0 0.5rem;
+      background-color: $color-secondary-light;
     }
   }
 
   &__web-item {
     padding: 0 0.5rem;
     justify-items: center;
-  }
-
-  &__btn {
-    width: 30rem;
-    font-size: 1.9rem;
-    height: 4rem;
-    transform: translateX(50%);
   }
 }

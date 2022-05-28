@@ -8,14 +8,21 @@
   transition: all 0.3s;
   background-color: transparent;
 
+  &-icon {
+    fill: $color-bright !important;
+    height: 1.6rem !important;
+  }
+
   &:hover {
     background-color: rgba($color-bright, 0.15);
   }
 
   &-center {
-    // position: absolute;
-    // top: 50%;
-    // left: 50%;
+    margin-top: 4rem;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 

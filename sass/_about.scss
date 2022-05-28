@@ -9,6 +9,8 @@
     border: solid 2rem $color-primary-light;
     background-color: $color-primary-light;
 
+    transition-delay: 500ms;
+
     &-text {
       display: grid;
       grid-gap: 1rem;

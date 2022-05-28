@@ -8,7 +8,7 @@ $nav-height: 6rem;
 
 .logo {
   font-size: 3rem;
-  color: $color-primary;
+  // color: $color-primary;
 }
 
 .sticky {
@@ -47,6 +47,11 @@ $nav-height: 6rem;
   align-items: center;
   transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
 
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0s;
+  animation-name: slider;
+
   &__btn {
     grid-column: 3 / -1;
     margin-left: 15px;
@@ -80,5 +85,14 @@ $nav-height: 6rem;
     &:hover {
       color: $color-bright;
     }
+  }
+}
+
+@keyframes slider {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
   }
 }

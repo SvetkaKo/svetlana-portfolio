@@ -63,6 +63,7 @@ h2 {
 
 h3 {
   font-size: 1.9rem;
+  line-height: 1.4;
 }
 
 hr {
@@ -72,9 +73,9 @@ hr {
   margin: auto;
 }
 
-.hidden {
-  opacity: 0;
-}
+// .hidden {
+//   opacity: 0;
+// }
 
 .container {
   display: grid;

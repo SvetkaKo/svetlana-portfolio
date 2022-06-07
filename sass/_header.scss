@@ -8,10 +8,15 @@
 
   &__text-box {
     height: 100%;
-    background-image: linear-gradient(90deg, rgba($color-primary-light, 0.8), rgba($color-primary-light, 0.1));
+    background-image: linear-gradient(145deg, rgba($color-primary-light, 0.8), rgba($color-primary-light, 0));
     padding: 2rem;
     grid-column: 1 / 2;
     width: 85%;
+
+    animation-duration: 0.5s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-name: slider_header;
   }
 
   &__h1-primary {
@@ -34,5 +39,14 @@
     margin-top: 2rem;
     font-size: 2.5rem;
     // color: $color-text-bright !important;
+  }
+}
+
+@keyframes slider_header {
+  0% {
+    transform: translateY(20%);
+  }
+  100% {
+    transform: translateY(0);
   }
 }

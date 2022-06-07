@@ -8,59 +8,45 @@
 
   &__content {
     display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
     grid-gap: 1.25rem;
-    background-color: $color-primary-light;
+
     padding: 2rem;
   }
 }
 
 .cert__item {
-  display: grid;
-  grid-template-columns: 12rem 1fr;
-  transition: all 0.5s;
-  border-radius: 3px;
+  background-color: $color-primary-light;
+  padding: 1rem;
+
   transition: all 0.3s;
   border-radius: 2px;
+
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  grid-row-gap: 0.5rem;
 
   &:hover {
     box-shadow: 10px 10px 20px -10px $navy-shadow;
     transform: translate(-0.5rem, -0.5rem);
   }
 
-  &-date {
-    background-color: $color-tertiary-light;
-    text-align: center;
-    font-size: 1.75rem;
-    padding: 0.5rem 2rem;
-  }
-
-  &-type {
-    text-align: center;
-    font-size: 1.75rem;
-    padding: 0.5rem 2rem;
-    // color: $color-text-light;
-  }
-
   &-heading {
-    text-decoration: underline;
-    font-size: 1.75rem;
     color: $color-bright;
   }
 
-  &-desc {
-    background-color: $color-secondary-light;
-    padding: 0.5rem 2rem;
+  &-footer {
+    display: flex;
+    align-items: flex-end;
   }
 
-  &-paragraph {
-    padding: 0.5rem 0;
+  &-date {
+    color: $color-bright-light;
   }
 
   &-url {
-    margin-top: 1rem;
-    text-decoration: none;
-    padding: 1px 2px;
-    border-bottom: solid 1px;
+    padding-left: 2rem;
+    text-decoration: underline;
     transition: all 0.5s;
     color: $color-bright;
   }

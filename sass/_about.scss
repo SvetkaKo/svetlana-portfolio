@@ -9,12 +9,19 @@
     border: solid 2rem $color-primary-light;
     background-color: $color-primary-light;
 
-    transition-delay: 500ms;
+    @media only screen and (max-width: $bp-largest) {
+      display: grid;
+      grid-template-rows: min-content min-content;
+    }
 
     &-text {
       display: grid;
       grid-gap: 1rem;
       padding-right: 2rem;
+
+      @media only screen and (max-width: $bp-largest) {
+        grid-column: 1 / -1;
+      }
     }
   }
 
@@ -34,6 +41,11 @@
     padding: 1.5rem;
     grid-column: 2 / -1;
     grid-row: 1 / -1;
+
+    @media only screen and (max-width: $bp-largest) {
+      grid-row: 1 / -1;
+      grid-column: 1 / -1;
+    }
 
     &::before {
       content: '';

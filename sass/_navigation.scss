@@ -20,14 +20,6 @@ $nav-height: 6rem;
   border-bottom: none;
 }
 
-.sticky-light {
-  position: fixed;
-
-  background-color: rgba($color-primary, 0.5);
-  backdrop-filter: blur(10px);
-  box-shadow: 0 10px 30px -10px $navy-shadow;
-}
-
 .nav-back {
   background-color: $color-tertiary-light;
   color: $color-secondary-light;
@@ -45,7 +37,6 @@ $nav-height: 6rem;
   grid-template-columns: min-content 1fr min-content;
   justify-content: center;
   align-items: center;
-  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
 
   animation-duration: 0.5s;
   animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
@@ -55,26 +46,116 @@ $nav-height: 6rem;
   &__btn {
     grid-column: 3 / -1;
     margin-left: 15px;
+
+    @media only screen and (max-width: $bp-medium) {
+      opacity: 0;
+    }
   }
 
   &__nav {
     display: flex;
     justify-content: end;
-    grid-column: 2 / -2;
+
+    @media only screen and (max-width: $bp-medium) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: fixed;
+
+      background-color: rgba($color-primary, 0.8);
+      backdrop-filter: blur(20px);
+      box-shadow: 0 10px 30px -10px $navy-shadow;
+      border-bottom: none;
+
+      font-size: 2.25rem;
+      top: 0px;
+      bottom: 0px;
+      right: 0px;
+      padding: 5rem 1rem;
+      z-index: 9;
+      opacity: 0;
+
+      height: 110vh;
+      width: 40vw;
+
+      transform: translateX(30vw);
+      transition: all 0.9s;
+    }
+  }
+
+  &__checkbox {
+    display: none;
+  }
+
+  &__button {
+    display: none;
+    height: 4rem;
+    width: 4rem;
+    position: fixed;
+    top: 1rem;
+    right: 2rem;
+    z-index: 10000;
+    text-align: center;
+    cursor: pointer;
+
+    @media only screen and (max-width: $bp-medium) {
+      display: block;
+    }
+  }
+
+  .navigation__icon {
+    color: $color-bright;
+    position: relative;
+    margin-top: 2rem;
+    right: 0px;
+
+    &,
+    &::before,
+    &::after {
+      right: 0px;
+      width: 3rem;
+      height: 3px;
+      background-color: $color-bright;
+      display: inline-block;
+    }
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      transition: all 0.2s;
+    }
+    &::before {
+      top: -0.8rem;
+    }
+    &::after {
+      top: 0.8rem;
+    }
+  }
+
+  &__checkbox:checked ~ &__nav {
+    opacity: 1;
+    transform: translateX(0vw);
   }
 
   &__item {
     margin: 1rem;
     display: inline-block;
     text-decoration: none;
+
+    @media only screen and (max-width: $bp-medium) {
+      display: flex;
+      margin-top: 3rem;
+    }
   }
 
   &__link {
     &:link,
     &:visited {
-      color: inherit;
+      color: $color-text-main;
       text-decoration: none;
-      transition: all 0.3s;
+      transition: all 0.5s;
 
       span {
         color: $color-bright;

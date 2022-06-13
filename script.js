@@ -3,7 +3,7 @@ const nav = document.querySelector('.navigation');
 
 const header = document.querySelector('.header');
 const navHeight = nav.getBoundingClientRect().height;
-console.log(navHeight);
+// console.log(navHeight);
 
 //////// show navigation when scrollTop
 
@@ -37,18 +37,17 @@ window.addEventListener(
   function () {
     const st = window.pageYOffset || document.documentElement.scrollTop;
     if (st > lastScrollTop) {
-      console.log(window.pageYOffset);
-      console.log(document.documentElement.scrollTop);
-      nav.classList.add('sticky-light');
-      nav.classList.remove('sticky', 'nav-back');
+      // console.log(window.pageYOffset);
+      // console.log(document.documentElement.scrollTop);
+      nav.classList.add('sticky');
+      nav.classList.remove('nav-back');
       // console.log('down');
     } else if (document.documentElement.scrollTop <= 60) {
       // console.log('top');
       nav.classList.add('nav-back');
-      nav.classList.remove('sticky', 'sticky-light');
+      nav.classList.remove('sticky');
     } else {
-      nav.classList.remove('nav-back', 'sticky-light');
-      nav.classList.add('sticky');
+      nav.classList.remove('nav-back');
       //   console.log('up');
     }
     lastScrollTop = st <= 0 ? 0 : st; // For Mobile or negative scrolling
@@ -76,4 +75,15 @@ const sectionObserver = new IntersectionObserver(revaelSection, {
 allSections.forEach(function (section) {
   sectionObserver.observe(section);
   section.classList.add('section--hidden');
+});
+
+// hide nav when it's clicked
+
+const btn = document.querySelectorAll('.navigation__item');
+const checkbox = document.querySelector('.navigation__checkbox');
+
+btn.forEach((btn) => {
+  btn.addEventListener('click', function () {
+    checkbox.checked = checkbox.checked ? false : true;
+  });
 });

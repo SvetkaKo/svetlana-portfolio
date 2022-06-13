@@ -38,6 +38,9 @@ html {
   font-size: 62.5%; // 10px/16px = 62.5% -> 1rem = 10px
   scroll-behavior: smooth;
   color: $color-text-main;
+  @media only screen and (max-width: $bp-small) {
+    font-size: 50%;
+  }
 }
 
 body {
@@ -51,6 +54,9 @@ body {
 section {
   padding: 6rem 18rem;
   transition: transform 1s, opacity 1s;
+  @media only screen and (max-width: $bp-medium) {
+    padding: 6rem 6rem;
+  }
 }
 
 h1 {
@@ -67,15 +73,10 @@ h3 {
 }
 
 hr {
-  // border-top: 1px solid $color-text-grey;
   width: 50%;
   border-bottom: none;
   margin: auto;
 }
-
-// .hidden {
-//   opacity: 0;
-// }
 
 .container {
   display: grid;
